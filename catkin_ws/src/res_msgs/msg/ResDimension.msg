@@ -1,5 +1,5 @@
 string file_name
 time res_time
-int32[] valence
+int32[] vm #valence and emotion level
 
 

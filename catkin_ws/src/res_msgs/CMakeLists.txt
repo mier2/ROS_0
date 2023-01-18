@@ -52,7 +52,6 @@ find_package(catkin REQUIRED COMPONENTS
 add_message_files(
   FILES
   ResDimension.msg
-  ResLayout.msg
 )
 
 ## Generate services in the 'srv' folder

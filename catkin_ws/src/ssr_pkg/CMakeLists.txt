@@ -11,6 +11,7 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
   std_msgs
+  res_msgs
 )
 
 ## System dependencies are found with CMake's conventions
@@ -212,3 +213,4 @@ add_executable(p_node src/p_node.cpp)
 target_link_libraries(p_node
   ${catkin_LIBRARIES}
 )
+add_dependencies(p_node res_msgs_generate_messages_cpp)

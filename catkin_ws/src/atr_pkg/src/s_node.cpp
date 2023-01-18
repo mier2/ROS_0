@@ -1,8 +1,13 @@
 #include <ros/ros.h>
 #include <std_msgs/String.h>
+#include <res_msgs/ResDimension.h>
+#include <string>
 
-void p_callback(std_msgs::String msg){
-    ROS_INFO(msg.data.c_str());
+void p_callback(res_msgs::ResDimension msg){
+    ROS_WARN(msg.file_name.c_str());
+    ROS_WARN("%d valence", msg.vm[0]);
+    ROS_WARN("%d emotion", msg.vm[1]);
+    ROS_WARN("%d time", msg.res_time);
 }
 
 int main(int argc, char *argv[])
